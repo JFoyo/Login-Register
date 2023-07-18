@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn | Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="openPopUp()">
+    <div class="popup" id="logInPopUp">
+        <form id="logInForm">
+            <h1>LOGIN</h1>
+            <label for="username">Username</label>
+            <input type="text" id="userNameL" placeholder="Enter your user name here" required/>
+            <label for="password">Password</label>
+            <div class="password">
+            <input type="password" id="PasswordField1" placeholder="Password" required/>
+            <img src="eye-close.png" alt="" id="eyeIconField1">
+            </div>
+            <div class="btn">
+                <button type="submit" value="submit" onclick="closePopUp()">LogIn</button>
+                <button type="button" onclick="registration(); closePopUp()" onclick="">Register</button>
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="registrationPopUp">
+        <form id="registrationForm">
+            <h1>REGISTER</h1>
+            <label for="username">Username</label>
+            <input type="text" id="userNameR" placeholder="Enter your user name here" required/>
+            <label for="password">Password</label>
+            <div class="password">
+                <input type="password" id="PasswordField2" placeholder="Password" required/>
+                <img src="eye-close.png" alt="" id="eyeIconField2">
+            </div>
+            <label for="password">Re-enter Password</label>
+            <div class="password">
+                <input type="password" id="PasswordField3" placeholder="Password" required/>
+                <img src="eye-close.png" alt="" id="eyeIconField3">
+            </div>
+                <button type="submit" value="submit" onclick="closeRegistration()">Register</button>
+        </form>
+    </div>
+    <div class="userInfo" id="userInfo"></div>
+    <script src="index.js"></script>
+</body>
+</html>
